@@ -396,3 +396,101 @@ body {
   .awesome__clients-quote cite {
     font-size: 14px;
     line-height: 24px; } }
+
+.logos {
+  display: flex;
+  width: 100%;
+  max-width: 765px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 60px 10px;
+  margin: 0 auto; }
+
+@media (max-width: 700px) {
+  .logos {
+    padding: 30px 10px; }
+    .logos__img {
+      display: block;
+      width: 100%;
+      max-width: 100px; } }
+
+@media (max-width: 430px) {
+  .logos {
+    flex-wrap: wrap;
+    padding: 20px 20px; }
+    .logos__img {
+      max-width: 130px;
+      width: 100%;
+      margin-top: 10px; } }
+
+.team {
+  background-color: #111111;
+  text-align: center; }
+  .team__title {
+    color: #d4d4d4; }
+  .team__member {
+    max-width: 220px;
+    width: 100%; }
+    .team__member-wrap {
+      display: flex;
+      flex-basis: 780px;
+      justify-content: space-between;
+      margin: 80px 0 50px 0; }
+    .team__member-foto {
+      display: block;
+      width: 100%;
+      max-width: 220px;
+      height: 220px;
+      border: 7px solid #d4d4d4;
+      background-color: transparent;
+      border-radius: 100%; }
+    .team__member-name {
+      display: block;
+      font-size: 18px;
+      font-weight: bold;
+      color: #d4d4d4;
+      margin: 25px 0 20px 0; }
+    .team__member-position {
+      display: block;
+      font-size: 16px;
+      color: #ebebeb;
+      margin-bottom: 10px; }
+    .team__member-social-link {
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      max-width: 40px;
+      height: 40px;
+      margin: 0 10px;
+      border: 3px solid #d4d4d4;
+      border-radius: 100%; }
+      .team__member-social-link:hover {
+        border: none;
+        cursor: pointer; }
+      .team__member-social-link-facebook:hover {
+        background-color: #3b5998; }
+      .team__member-social-link-twitter:hover {
+        background-color: #00aced; }
+      .team__member-social-link-pinterest:hover {
+        background-color: #cb2028; }
+      .team__member-social-link-google:hover {
+        background-color: #d95232; }
+  .team__text {
+    width: 100%;
+    max-width: 690px;
+    margin: 0 auto;
+    font-size: 20px;
+    color: #ebebeb;
+    line-height: 32px; }
+
+@media (max-width: 730px) {
+  .team__member-wrap {
+    flex-direction: column;
+    align-items: center; }
+  .team__member {
+    margin-top: 60px; } }
+
+@media (max-width: 540px) {
+  .team__member-wrap {
+    margin-top: 0; } }
