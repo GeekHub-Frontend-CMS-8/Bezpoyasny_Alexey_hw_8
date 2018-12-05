@@ -131,6 +131,15 @@ body {
   line-height: 24px;
   letter-spacing: -0.45px; }
 
+@media (max-width: 680px) {
+  .title {
+    font-size: 40px; }
+  .text {
+    font-size: 16px;
+    line-height: 20px; }
+  .subtitle {
+    font-size: 14px; } }
+
 @media (max-width: 540px) {
   .container {
     padding: 60px 15px 55px 15px; } }
@@ -310,13 +319,6 @@ body {
   .services__item-wrap-text {
     flex-basis: 450px; } }
 
-@media (max-width: 680px) {
-  .title {
-    font-size: 40px; }
-  .text {
-    font-size: 16px;
-    line-height: 20px; } }
-
 @media (max-width: 540px) {
   .services__img-wrap {
     max-width: 100px; }
@@ -350,7 +352,8 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 45px; }
+    margin-top: 45px;
+    flex-wrap: wrap; }
     .awesome__clients-wrap-2 {
       flex-direction: row-reverse; }
   .awesome__clients-foto {
@@ -376,3 +379,20 @@ body {
       color: #7690c5;
       letter-spacing: -0.5px;
       line-height: 36px; }
+
+@media (max-width: 920px) {
+  .awesome__clients-wrap {
+    justify-content: center; }
+  .awesome__clients-foto {
+    margin-bottom: 20px; }
+  .awesome__clients-quote {
+    flex-basis: 500px;
+    padding: 20px 10px; } }
+
+@media (max-width: 550px) {
+  .awesome__clients-quote p {
+    font-size: 18px;
+    line-height: 20px; }
+  .awesome__clients-quote cite {
+    font-size: 14px;
+    line-height: 24px; } }

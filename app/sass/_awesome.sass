@@ -7,6 +7,7 @@
     justify-content: space-between
     align-items: center
     margin-top: 45px
+    flex-wrap: wrap
     &-2
       flex-direction: row-reverse
   &__clients-foto
@@ -33,3 +34,23 @@
       letter-spacing: -0.5px
       line-height: 36px
 
+@media (max-width: 920px)
+  .awesome
+    &__clients-wrap
+      //flex-wrap: wrap
+      justify-content: center
+    &__clients-foto
+      margin-bottom: 20px
+    &__clients-quote
+      flex-basis: 500px
+      padding: 20px 10px
+
+@media (max-width: 550px)
+  .awesome
+    &__clients-quote
+      p
+        font-size: 18px
+        line-height: 20px
+      cite
+        font-size: 14px
+        line-height: 24px
