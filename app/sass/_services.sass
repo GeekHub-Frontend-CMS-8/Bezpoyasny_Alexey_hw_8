@@ -1,0 +1,88 @@
+.services
+  &__item-wrap
+    display: flex
+    justify-content: space-around
+    align-items: center
+    &-text
+      flex-basis: 555px
+    &-second
+      background-color: $primary-bg-color
+  &__text
+    margin-top: 35px
+  &__item-content
+    display: flex
+    justify-content: space-around
+    align-items: center
+  &__item
+    flex-basis: 375px
+    display: flex
+    justify-content: space-between
+    align-items: flex-start
+    margin-top: 50px
+    &-wrap
+      display: flex
+      justify-content: space-around
+      flex-wrap: wrap
+    &-img
+      width: 100%
+      height: auto
+      &-wrap
+        margin-right: 15px
+        width: 100%
+        max-width: 70px
+    &-title
+      font-size: 22px
+      font-weight: 500
+      color: $third-color
+      margin-bottom: 10px
+    &-text
+      font-size: $small-font-size
+      color: $primary-color
+      line-height: 18px
+      letter-spacing: -0.45px
+
+
+@media (max-width: 850px)
+  .services
+    &__img
+      width: 100%
+      height: auto
+    &__img-wrap
+      width: 100%
+      max-width: 190px
+    &__item-wrap-text
+      flex-basis: 450px
+
+@media (max-width: 680px)
+  .title
+    font-size: 40px
+  .text
+    font-size: 16px
+    line-height: 20px
+
+@media (max-width: 540px)
+  .services
+    &__img-wrap
+      max-width: 100px
+    &__item-wrap-text
+      flex-basis: 350px
+    &__item-title
+      font-size: $small-font-size
+    &__item-text
+      font-size: 14px
+  .title
+    font-size: 28px
+  .text
+    font-size: 14px
+
+@media (max-width: 380px)
+  .services
+    &__img-wrap
+      max-width: 70px
+    &__item-wrap-text
+      flex-basis: 220px
+  .title
+    font-size: 23px
+  .text
+    font-size: 12px
+    line-height: 14px
