@@ -11,9 +11,13 @@
     color: $second-color
     font-size: $small-font-size
     line-height: 22px
+    @media (max-width: 540px)
+      font-size: 14px
   &__column
     width: 100%
     max-width: 450px
+    @media (max-width: 930px)
+      margin: 0 auto
   &__contacts
     margin-top: 55px
     display: flex
@@ -21,12 +25,18 @@
     align-items: center
     flex-wrap: wrap
     flex-basis: 420px
+    @media (max-width: 540px)
+      margin-top: 20px
     &-link
       flex-basis: 50%
       margin-bottom: 40px
       font-size: $small-font-size
       color: $second-color
       text-decoration: none
+      @media (max-width: 540px)
+        margin-bottom: 15px
+        flex-basis: 100%
+        margin-left: 20px
       img
         margin-right: 15px
   &__form-item, &__form-message
@@ -48,22 +58,5 @@
     text-align: center
     font-size: 16px
     color: $second-color
-
-
-@media (max-width: 930px)
-  .contact-us
-    &__column
-      margin: 0 auto
-
-@media (max-width: 540px)
-  .contact-us
-    &__subtitle
-      font-size: 14px
-    &__contacts-link
-      margin-bottom: 15px
-      flex-basis: 100%
-      margin-left: 20px
-    &__contacts
-      margin-top: 20px
-    &__copyright
+    @media (max-width: 540px)
       font-size: 12px

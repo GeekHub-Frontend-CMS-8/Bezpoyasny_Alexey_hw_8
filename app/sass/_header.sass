@@ -32,11 +32,13 @@
     padding-right: 20px
   &__nav-for-mobile
     display: none
+    @media (max-width: 645px)
+      display: block
   &__nav-item-mobile
     width: 100%
     padding: 30px 15px
     background-color: #7690c5
-    border: 1px solid #222222
+    border: 1px solid $third-color
   &__link-mobile
     text-decoration: none
     color: $second-color
@@ -49,10 +51,6 @@
     margin-top: 20px
     &:target
       display: block
-
-@media (max-width: 645px)
-  .header
-    &__nav-for-desctop
+  &__nav-for-desctop
+    @media (max-width: 645px)
       display: none
-    &__nav-for-mobile
-      display: block

@@ -8,7 +8,9 @@
     align-items: center
     margin-top: 45px
     flex-wrap: wrap
-    &-2
+    @media (max-width: 920px)
+      justify-content: center
+    &-right
       flex-direction: row-reverse
   &__clients-foto
     display: block
@@ -18,73 +20,60 @@
     min-height: 220px
     border-radius: 100%
     background-color: #000
+    @media (max-width: 920px)
+      margin-bottom: 20px
   &__clients-quote
     position: relative
     flex-basis: 650px
     padding: 40px 85px
-    border: 1px solid #e8e8e8
-    background-color: #fff
+    border: 1px solid $border-quote-color
+    background-color: $second-color-text
     margin: 0 30px
+    @media (max-width: 920px)
+      flex-basis: 500px
+      padding: 20px 10px
     &:before
       border: 20px solid transparent
-      border-right-color: #e8e8e8
+      border-right-color: $border-quote-color
       position: absolute
       top: 30%
       right: 100%
       content: ''
+      @media (max-width: 810px)
+        border: none
     &:after
       border: 18px solid transparent
-      border-right-color: #fff
+      border-right-color: $second-color-text
       position: absolute
       top: 30%
       right: 100%
       content: ''
-    &-2
+      @media (max-width: 810px)
+        border: none
+    &-right
       &:before
         border-right-color: transparent
-        border-left-color: #e8e8e8
+        border-left-color: $border-quote-color
         top: 70px
         left: 100%
       &:after
         border-right-color: transparent
-        border-left-color: #fff
+        border-left-color: $second-color-text
         top: 70px
         left: 100%
-    p
+    &-text
       font-size: 26px
       color: $primary-color
       line-height: 28px
       letter-spacing: -0.65px
-    cite
+      @media (max-width: 550px)
+        font-size: 18px
+        line-height: 20px
+    &-autor
       font-size: 20px
       color: #7690c5
       letter-spacing: -0.5px
       line-height: 36px
-
-@media (max-width: 920px)
-  .awesome
-    &__clients-wrap
-      justify-content: center
-    &__clients-foto
-      margin-bottom: 20px
-    &__clients-quote
-      flex-basis: 500px
-      padding: 20px 10px
-
-@media (max-width: 550px)
-  .awesome
-    &__clients-quote
-      p
-        font-size: 18px
-        line-height: 20px
-      cite
+      @media (max-width: 550px)
         font-size: 14px
         line-height: 24px
-
-@media (max-width: 810px)
-  .awesome
-    &__clients-quote
-      &:before
-        border: none
-      &:after
-        border: none

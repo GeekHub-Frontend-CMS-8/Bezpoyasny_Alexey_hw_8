@@ -7,8 +7,18 @@
       flex-basis: 555px
     &-second
       background-color: $primary-bg-color
+  &__title
+    @media (max-width: 540px)
+      font-size: 28px
+    @media (max-width: 380px)
+      font-size: 23px
   &__text
     margin-top: 35px
+    @media (max-width: 540px)
+      font-size: 14px
+    @media (max-width: 380px)
+      font-size: 12px
+      line-height: 14px
   &__item-content
     display: flex
     justify-content: space-around
@@ -35,47 +45,31 @@
       font-weight: 500
       color: $third-color
       margin-bottom: 10px
+      @media (max-width: 540px)
+        font-size: $small-font-size
     &-text
       font-size: $small-font-size
       color: $primary-color
       line-height: 18px
       letter-spacing: -0.45px
-
-
-@media (max-width: 850px)
-  .services
-    &__img
+      @media (max-width: 540px)
+        font-size: 14px
+  &__img
+    @media (max-width: 850px)
       width: 100%
       height: auto
-    &__img-wrap
-      width: 100%
-      max-width: 190px
-    &__item-wrap-text
+    &-wrap
+      @media (max-width: 850px)
+        width: 100%
+        max-width: 190px
+      @media (max-width: 540px)
+        max-width: 100px
+      @media (max-width: 380px)
+        max-width: 70px
+  &__item-wrap-text
+    @media (max-width: 850px)
       flex-basis: 450px
-
-@media (max-width: 540px)
-  .services
-    &__img-wrap
-      max-width: 100px
-    &__item-wrap-text
+    @media (max-width: 540px)
       flex-basis: 350px
-    &__item-title
-      font-size: $small-font-size
-    &__item-text
-      font-size: 14px
-  .title
-    font-size: 28px
-  .text
-    font-size: 14px
-
-@media (max-width: 380px)
-  .services
-    &__img-wrap
-      max-width: 70px
-    &__item-wrap-text
+    @media (max-width: 380px)
       flex-basis: 220px
-  .title
-    font-size: 23px
-  .text
-    font-size: 12px
-    line-height: 14px
