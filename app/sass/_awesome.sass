@@ -1,0 +1,79 @@
+.awesome
+  background-color: $primary-bg-color
+  .title, .subtitle
+    text-align: center
+  &__clients-wrap
+    display: flex
+    justify-content: space-between
+    align-items: center
+    margin-top: 45px
+    flex-wrap: wrap
+    @media (max-width: 920px)
+      justify-content: center
+    &-right
+      flex-direction: row-reverse
+  &__clients-foto
+    display: block
+    width: 100%
+    max-width: 220px
+    height: 100%
+    min-height: 220px
+    border-radius: 100%
+    background-color: #000
+    @media (max-width: 920px)
+      margin-bottom: 20px
+  &__clients-quote
+    position: relative
+    flex-basis: 620px
+    padding: 40px 85px
+    border: 1px solid $border-quote-color
+    background-color: $second-color-text
+    margin: 0 30px
+    @media (max-width: 930px)
+      flex-basis: 500px
+      padding: 20px 10px
+    &:before
+      border: 20px solid transparent
+      border-right-color: $border-quote-color
+      position: absolute
+      top: 30%
+      right: 100%
+      content: ''
+      @media (max-width: 810px)
+        border: none
+    &:after
+      border: 18px solid transparent
+      border-right-color: $second-color-text
+      position: absolute
+      top: 30%
+      right: 100%
+      content: ''
+      @media (max-width: 810px)
+        border: none
+    &-right
+      &:before
+        border-right-color: transparent
+        border-left-color: $border-quote-color
+        top: 70px
+        left: 100%
+      &:after
+        border-right-color: transparent
+        border-left-color: $second-color-text
+        top: 70px
+        left: 100%
+    &-text
+      font-size: 26px
+      color: $primary-color
+      line-height: 28px
+      letter-spacing: -0.65px
+      @media (max-width: 550px)
+        font-size: 18px
+        line-height: 20px
+    &-autor
+      font-size: 20px
+      color: #7690c5
+      letter-spacing: -0.5px
+      line-height: 36px
+      @media (max-width: 550px)
+        font-size: 14px
+        line-height: 24px

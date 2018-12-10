@@ -1,0 +1,40 @@
+*
+  box-sizing: border-box
+
+body
+  font-family: 'Brandon Grotesque', sans-serif
+
+.container
+  width: 100%
+  max-width: 940px
+  margin: 0 auto
+  padding: 100px 15px 95px 15px
+  @media (max-width: 680px)
+    padding: 60px 15px 55px 15px
+
+.title
+  font-size: $big-font-size
+  color: $third-color
+  font-weight: bold
+  letter-spacing: -1.5px
+  @media (max-width: 680px)
+    font-size: 40px
+  span
+    font-weight: 300
+
+.subtitle
+  font-size: 22px
+  color: $primary-color
+  letter-spacing: -0.55px
+  margin-top: 20px
+  @media (max-width: 680px)
+    font-size: 14px
+
+.text
+  font-size: $small-font-size
+  color: $primary-color
+  line-height: 24px
+  letter-spacing: -0.45px
+  @media (max-width: 680px)
+    font-size: 16px
+    line-height: 20px

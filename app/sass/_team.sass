@@ -1,0 +1,74 @@
+.team
+  background-color: #111111
+  text-align: center
+  &__title
+    color: $second-color
+  &__member
+    max-width: 220px
+    width: 100%
+    @media (max-width: 730px)
+      margin-top: 60px
+    &-wrap
+      display: flex
+      flex-basis: 780px
+      justify-content: space-between
+      margin: 80px 0 50px 0
+      @media (max-width: 730px)
+        flex-direction: column
+        align-items: center
+        margin: 30px 0 20px 0
+      @media (max-width: 540px)
+        margin-top: 0
+    &-foto-wrap
+      width: 100%
+      max-width: 220px
+      height: 220px
+      border: 7px solid $second-color
+      border-radius: 100%
+      overflow: hidden
+    &-foto
+      width: 100%
+    &-name
+      display: block
+      font-size: $small-font-size
+      font-weight: bold
+      color: $second-color
+      margin: 25px 0 20px 0
+    &-position
+      display: block
+      font-size: 16px
+      color: #ebebeb
+      margin-bottom: 10px
+    &-social
+      &-link
+        display: inline-flex
+        justify-content: center
+        align-items: center
+        width: 100%
+        max-width: 40px
+        height: 40px
+        margin: 0 10px
+        border: 3px solid $second-color
+        border-radius: 100%
+        &:hover
+          border: none
+          cursor: pointer
+        &-facebook
+          &:hover
+            background-color: #3b5998
+        &-twitter
+          &:hover
+            background-color: #00aced
+        &-pinterest
+          &:hover
+            background-color: #cb2028
+        &-google
+          &:hover
+            background-color: #d95232
+  &__text
+    width: 100%
+    max-width: 690px
+    margin: 0 auto
+    font-size: 20px
+    color: #ebebeb
+    line-height: 32px

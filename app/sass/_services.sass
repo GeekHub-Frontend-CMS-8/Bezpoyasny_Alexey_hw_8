@@ -1,0 +1,87 @@
+.services
+  &__item-wrap
+    display: flex
+    justify-content: space-around
+    align-items: center
+    &-text
+      flex-basis: 555px
+    &-second
+      background-color: $primary-bg-color
+  &__title
+    @media (max-width: 540px)
+      font-size: 28px
+    @media (max-width: 380px)
+      font-size: 23px
+  &__text
+    margin-top: 35px
+    @media (max-width: 540px)
+      font-size: 14px
+    @media (max-width: 380px)
+      font-size: 12px
+      line-height: 14px
+  &__item-content
+    display: flex
+    justify-content: space-around
+    align-items: center
+  &__item
+    flex-basis: 375px
+    display: flex
+    justify-content: space-between
+    align-items: flex-start
+    margin-top: 50px
+    @media (max-width: 780px)
+      flex-basis: 300px
+    @media (max-width: 630px)
+      flex-basis: 250px
+    &-wrap
+      display: flex
+      justify-content: space-around
+      flex-wrap: wrap
+    &-img
+      width: 100%
+      height: auto
+      &-wrap
+        margin-right: 15px
+        width: 100%
+        max-width: 70px
+    &-title
+      font-size: 22px
+      font-weight: 500
+      color: $third-color
+      margin-bottom: 10px
+      @media (max-width: 540px)
+        font-size: $small-font-size
+    &-text
+      font-size: $small-font-size
+      color: $primary-color
+      line-height: 18px
+      letter-spacing: -0.45px
+      @media (max-width: 540px)
+        font-size: 14px
+  &__img-mobile
+    display: none
+    width: 100%
+    margin-top: 30px
+    @media (max-width: 670px)
+      display: block
+  &__img
+    @media (max-width: 850px)
+      width: 100%
+      height: auto
+    @media (max-width: 670px)
+      display: none
+    &-wrap
+      @media (max-width: 850px)
+        width: 100%
+        max-width: 190px
+      @media (max-width: 540px)
+        max-width: 100px
+      @media (max-width: 380px)
+        max-width: 70px
+  &__item-wrap-text
+    @media (max-width: 850px)
+      flex-basis: 450px
+    @media (max-width: 540px)
+      flex-basis: 350px
+    @media (max-width: 380px)
+      flex-basis: 220px
